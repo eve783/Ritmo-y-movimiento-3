@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ritmo y Movimiento | Grupo de Danza</title>
+<style>
+:root{--vino:#7b1e4b;--rosa:#e9a2bf;--crema:#fff8f3;--oscuro:#241b20;--blanco:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--oscuro);background:var(--crema)}
+nav{position:sticky;top:0;z-index:20;background:#241b20eF;color:white;display:flex;justify-content:space-between;align-items:center;padding:14px 6%;backdrop-filter:blur(8px)}
+nav .logo{font-weight:800;font-size:1.15rem}nav a{color:white;text-decoration:none;margin-left:18px;font-size:.92rem}
+.hero{min-height:72vh;display:grid;place-items:center;text-align:center;padding:80px 7%;background:radial-gradient(circle at 20% 20%,#f6c6d8,transparent 35%),linear-gradient(135deg,#fff8f3,#f4d9e5)}
+.hero h1{font-size:clamp(3rem,9vw,6.5rem);margin:0;color:var(--vino);letter-spacing:-3px}.hero p{font-size:1.25rem;max-width:720px;margin:18px auto 30px;line-height:1.6}
+.btn{border:0;border-radius:999px;padding:13px 21px;background:var(--vino);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:5px}.btn.alt{background:white;color:var(--vino);border:2px solid var(--vino)}
+section{padding:70px 7%;max-width:1200px;margin:auto}h2{font-size:2.1rem;color:var(--vino);margin-top:0}h3{color:var(--vino)}.lead{line-height:1.7;max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:white;border-radius:22px;padding:24px;box-shadow:0 8px 30px #7b1e4b12;border:1px solid #eddde4}.icon{font-size:2.3rem}.tag{display:inline-block;padding:7px 12px;border-radius:999px;background:#f5d8e5;color:var(--vino);margin:4px}
+.person img,.gallery img{width:100%;height:210px;object-fit:cover;border-radius:16px;background:#f1e3e9}.person{text-align:center}.gallery .box{background:white;padding:10px;border-radius:20px}.gallery img{height:190px}
+.event{display:flex;gap:20px;align-items:flex-start}.date{min-width:90px;text-align:center;background:var(--vino);color:white;border-radius:16px;padding:12px}.date b{display:block;font-size:1.8rem}
+form{display:grid;gap:12px;max-width:760px}input,textarea,select{width:100%;padding:12px 14px;border:1px solid #d8c5ce;border-radius:12px;font:inherit;background:white}textarea{min-height:100px}
+footer{background:#241b20;color:white;padding:35px 7%;text-align:center}.social a{color:#ffd4e5;margin:0 8px}
+.modal{position:fixed;inset:0;background:#0009;display:none;place-items:center;z-index:50;padding:20px}.modal.show{display:grid}.panel{background:var(--crema);width:min(1050px,100%);max-height:92vh;overflow:auto;border-radius:24px;padding:25px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tabs button{border:0;padding:10px 14px;border-radius:999px;cursor:pointer}.tabs button.active{background:var(--vino);color:white}.admin-section{display:none}.admin-section.active{display:block}.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px;background:white;border-radius:14px;margin:8px 0}.small{font-size:.88rem;color:#6b5b63}.danger{background:#a52222}.notice{padding:12px 15px;border-radius:12px;background:#fff0c9;margin:10px 0}.hidden{display:none!important}
+@media(max-width:700px){nav{align-items:flex-start;gap:8px}nav div:last-child{display:none}.event{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav><div class="logo">💃 Ritmo y Movimiento</div><div>
+<a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#estilos">Estilos</a><a href="#equipo">Equipo</a><a href="#galeria">Galería</a><a href="#agenda">Agenda</a><a href="#registro">Únete</a><a href="#contacto">Contacto</a>
+</div></nav>
+
+<header class="hero" id="inicio">
+<div><div style="font-size:3rem">✨💃🕺✨</div>
+<h1>Ritmo y Movimiento</h1>
+<p><strong>“Donde la música se convierte en movimiento y cada paso cuenta una historia.”</strong><br>Un espacio para expresarnos, aprender, compartir y disfrutar la danza.</p>
+<a class="btn" href="#registro">Quiero ser parte</a><a class="btn alt" href="#galeria">Conoce nuestro mundo</a></div>
+</header>
+
+<section id="nosotros"><h2>Sobre nosotros</h2><p class="lead">Ritmo y Movimiento es un proyecto de grupo de danza creado para unir personas a través de la música, el movimiento y la creatividad. Buscamos que cada integrante encuentre una forma de expresarse, fortalecer su confianza y disfrutar del trabajo en equipo.</p>
+<div class="grid"><div class="card"><div class="icon">🎯</div><h3>Misión</h3><p>Promover la danza como una forma de expresión, integración y bienestar, creando un ambiente de respeto, creatividad y compañerismo.</p></div><div class="card"><div class="icon">🌟</div><h3>Visión</h3><p>Ser un grupo reconocido por su energía, disciplina y creatividad, inspirando a más personas a descubrir el poder del movimiento.</p></div><div class="card"><div class="icon">🤝</div><h3>Valores</h3><p>Respeto · compromiso · compañerismo · disciplina · creatividad · alegría.</p></div></div></section>
+
+<section id="estilos"><h2>Nuestros estilos</h2><p class="lead">Exploramos diferentes formas de movimiento para que cada presentación tenga su propia identidad.</p><div class="grid" id="stylesList"></div></section>
+
+<section id="equipo"><h2>Nuestro equipo</h2><div class="grid" id="teamList"></div></section>
+
+<section id="galeria"><h2>Galería</h2><p class="lead">Nuestros ensayos, presentaciones, detrás de escena y momentos especiales.</p><div class="grid gallery" id="galleryList"></div></section>
+
+<section id="agenda"><h2>Próximas presentaciones</h2><div id="eventsList"></div></section>
+
+<section id="registro"><h2>Únete a Ritmo y Movimiento</h2><p class="lead">Completa el formulario para registrarte como participante del proyecto.</p>
+<form id="registerForm">
+<input required name="nombre" placeholder="Nombre"><input required name="apellido" placeholder="Apellido">
+<input required name="cedula" placeholder="Cédula"><input required name="direccion" placeholder="Dirección">
+<input required name="facultad" placeholder="Facultad"><input required name="carrera" placeholder="Carrera">
+<input required name="ciclo" placeholder="Ciclo"><label>Foto personal <input required type="file" name="foto" accept="image/*"></label>
+<button class="btn" type="submit">Registrarme</button><div id="regMsg"></div>
+</form></section>
+
+<section id="contacto"><h2>Conecta con nosotros</h2><div class="card"><p class="lead">Síguenos y acompáñanos en cada paso.</p><div class="social"><a href="#" onclick="return false">📷 Instagram</a><a href="#" onclick="return false">💬 WhatsApp</a><a href="#" onclick="return false">🎵 TikTok</a></div><p class="small">Los enlaces pueden configurarse desde el panel de administración.</p></div></section>
+
+<footer>💃 Ritmo y Movimiento · Proyecto académico universitario · <button class="btn alt" onclick="openAdmin()">🔐 Administración</button></footer>
+
+<div class="modal" id="adminModal"><div class="panel">
+<div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">Panel de administración</h2><button class="btn danger" onclick="closeAdmin()">Cerrar</button></div>
+<div id="loginBox"><p>Ingresa como administradora para gestionar el prototipo.</p><input id="adminPass" type="password" placeholder="Contraseña"><button class="btn" onclick="login()">Entrar</button><p class="small">Contraseña de demostración: <b>ritmo2026</b></p></div>
+<div id="dashboard" class="hidden">
+<div class="notice">💡 Los cambios de este prototipo se guardan en el navegador mediante almacenamiento local. Sirve para la demostración universitaria.</div>
+<div class="tabs">
+<button class="active" onclick="showTab('registros',this)">👥 Registros</button><button onclick="showTab('eventos',this)">📅 Agenda</button><button onclick="showTab('gal',this)">📸 Galería</button><button onclick="showTab('equipoAdmin',this)">👯 Equipo</button><button onclick="showTab('estilosAdmin',this)">💃 Estilos</button>
+</div>
+<div id="registros" class="admin-section active"><h3>Personas registradas</h3><div id="adminRegs"></div></div>
+<div id="eventos" class="admin-section"><h3>Agregar presentación</h3><form onsubmit="addEvent(event)"><input required id="evTitle" placeholder="Nombre del evento"><input required id="evDate" type="date"><input required id="evTime" type="time"><input required id="evPlace" placeholder="Lugar"><textarea id="evDesc" placeholder="Descripción"></textarea><button class="btn">Agregar evento</button></form><div id="adminEvents"></div></div>
+<div id="gal" class="admin-section"><h3>Agregar foto a la galería</h3><form onsubmit="addGallery(event)"><input required id="gTitle" placeholder="Título"><select id="gCat"><option>Ensayos</option><option>Presentaciones</option><option>Detrás de escena</option><option>Momentos especiales</option></select><input required id="gFile" type="file" accept="image/*"><button class="btn">Agregar foto</button></form><div id="adminGallery"></div></div>
+<div id="equipoAdmin" class="admin-section"><h3>Agregar integrante</h3><form onsubmit="addTeam(event)"><input required id="tName" placeholder="Nombre"><input required id="tRole" placeholder="Rol (coreógrafa, bailarín...)"><input id="tPhoto" type="file" accept="image/*"><button class="btn">Agregar integrante</button></form><div id="adminTeam"></div></div>
+<div id="estilosAdmin" class="admin-section"><h3>Agregar estilo</h3><form onsubmit="addStyle(event)"><input required id="sName" placeholder="Nombre del estilo"><input required id="sIcon" placeholder="Emoji o ícono"><textarea id="sDesc" placeholder="Descripción"></textarea><button class="btn">Agregar estilo</button></form><div id="adminStyles"></div></div>
+</div></div></div>
+
+<script>
+const seed={styles:[{name:"Danza contemporánea",icon:"🌊",desc:"Expresión corporal, fluidez y libertad de movimiento."},{name:"Danza urbana",icon:"🔥",desc:"Energía, actitud y creatividad inspiradas en la cultura urbana."},{name:"Danza folclórica",icon:"🌺",desc:"Tradición, identidad cultural y alegría a través del movimiento."},{name:"Coreografías modernas",icon:"✨",desc:"Montajes dinámicos para presentaciones y eventos."}],
+team:[{name:"Integrante 1",role:"Coreógrafa",photo:""},{name:"Integrante 2",role:"Bailarín/a",photo:""},{name:"Integrante 3",role:"Bailarín/a",photo:""}],
+gallery:[{title:"Ensayo del grupo",cat:"Ensayos",photo:""},{title:"Preparación para presentación",cat:"Detrás de escena",photo:""},{title:"Momento especial",cat:"Momentos especiales",photo:""}],
+events:[{title:"Presentación de apertura",date:"2026-11-20",time:"16:00",place:"Auditorio universitario",desc:"Presentación especial de Ritmo y Movimiento."}],regs:[]};
+function get(k){let x=localStorage.getItem("rym_"+k);return x?JSON.parse(x):seed[k]}
+function set(k,v){localStorage.setItem("rym_"+k,JSON.stringify(v));renderAll()}
+function img(src,label){return src?`<img src="${src}" alt="${label}">`:`<div style="height:210px;border-radius:16px;background:linear-gradient(135deg,#f5d8e5,#ead5df);display:grid;place-items:center;font-size:4rem">💃</div>`}
+function renderAll(){
+stylesList.innerHTML=get("styles").map(x=>`<div class="card"><div class="icon">${x.icon}</div><h3>${x.name}</h3><p>${x.desc}</p></div>`).join("");
+teamList.innerHTML=get("team").map(x=>`<div class="card person">${img(x.photo,x.name)}<h3>${x.name}</h3><p>${x.role}</p></div>`).join("");
+galleryList.innerHTML=get("gallery").map(x=>`<div class="box">${img(x.photo,x.title)}<h3>${x.title}</h3><span class="tag">${x.cat}</span></div>`).join("");
+eventsList.innerHTML=get("events").map(x=>`<div class="card event"><div class="date"><b>${new Date(x.date+"T12:00").getDate()}</b>${new Date(x.date+"T12:00").toLocaleDateString("es-EC",{month:"short"}).toUpperCase()}</div><div><h3>${x.title}</h3><p>🕐 ${x.time} · 📍 ${x.place}</p><p>${x.desc||""}</p></div></div>`).join("");
+if(!document.getElementById("dashboard").classList.contains("hidden")) renderAdmin();
+}
+function fileData(file){return new Promise(r=>{if(!file)return r("");let rd=new FileReader();rd.onload=()=>r(rd.result);rd.readAsDataURL(file)})}
+const GOOGLE_SCRIPT_URL="https://script.google.com/macros/s/AKfycbwZJIVXkhohiXYT1DYicl8W6ZqvyVIfTqGa2LJW70iZKocZZkcWf8BkfO4-eYnWvmG0/exec";
+registerForm.onsubmit=async e=>{
+e.preventDefault();
+let f=new FormData(registerForm);
+let photo=await fileData(f.get("foto"));
+let registro={nombre:f.get("nombre"),apellido:f.get("apellido"),cedula:f.get("cedula"),direccion:f.get("direccion"),facultad:f.get("facultad"),carrera:f.get("carrera"),ciclo:f.get("ciclo"),foto:photo};
+let a=get("regs");
+a.push({...registro,photo,date:new Date().toLocaleDateString("es-EC")});
+set("regs",a);
+regMsg.innerHTML='<div class="notice">⏳ Enviando registro...</div>';
+try{
+await fetch(GOOGLE_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(registro)});
+registerForm.reset();
+regMsg.innerHTML='<div class="notice">✅ Registro enviado correctamente. ¡Gracias por unirte!</div>';
+}catch(error){
+regMsg.innerHTML='<div class="notice">⚠️ Se guardó en este dispositivo, pero no se pudo enviar a la hoja. Revisa tu conexión.</div>';
+}}
+function openAdmin(){adminModal.classList.add("show");adminPass.focus()}function closeAdmin(){adminModal.classList.remove("show")}
+function login(){if(adminPass.value==="ritmo2026"){loginBox.classList.add("hidden");dashboard.classList.remove("hidden");renderAdmin()}else alert("Contraseña incorrecta.")}
+function showTab(id,b){document.querySelectorAll(".admin-section").forEach(x=>x.classList.remove("active"));document.getElementById(id).classList.add("active");document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active")}
+function renderAdmin(){
+adminRegs.innerHTML=get("regs").length?get("regs").map((x,i)=>`<div class="row"><div><b>${x.nombre} ${x.apellido}</b><div class="small">Cédula: ${x.cedula} · ${x.facultad} · ${x.carrera} · Ciclo ${x.ciclo}<br>${x.direccion} · Registrado: ${x.date}</div></div><button class="btn danger" onclick="delReg(${i})">Eliminar</button></div>`).join(""):"<p>No hay registros todavía.";
+adminEvents.innerHTML=get("events").map((x,i)=>`<div class="row"><span><b>${x.title}</b> · ${x.date} · ${x.time} · ${x.place}</span><button class="btn danger" onclick="delItem('events',${i})">Eliminar</button></div>`).join("");
+adminGallery.innerHTML=get("gallery").map((x,i)=>`<div class="row"><span><b>${x.title}</b> · ${x.cat}</span><button class="btn danger" onclick="delItem('gallery',${i})">Eliminar</button></div>`).join("");
+adminTeam.innerHTML=get("team").map((x,i)=>`<div class="row"><span><b>${x.name}</b> · ${x.role}</span><button class="btn danger" onclick="delItem('team',${i})">Eliminar</button></div>`).join("");
+adminStyles.innerHTML=get("styles").map((x,i)=>`<div class="row"><span>${x.icon} <b>${x.name}</b></span><button class="btn danger" onclick="delItem('styles',${i})">Eliminar</button></div>`).join("");
+}
+function delReg(i){let a=get("regs");a.splice(i,1);set("regs",a)}
+function delItem(k,i){let a=get(k);a.splice(i,1);set(k,a)}
+async function addEvent(e){e.preventDefault();let a=get("events");a.push({title:evTitle.value,date:evDate.value,time:evTime.value,place:evPlace.value,desc:evDesc.value});set("events",a);e.target.reset()}
+async function addGallery(e){e.preventDefault();let photo=await fileData(gFile.files[0]),a=get("gallery");a.push({title:gTitle.value,cat:gCat.value,photo});set("gallery",a);e.target.reset()}
+async function addTeam(e){e.preventDefault();let photo=await fileData(tPhoto.files[0]),a=get("team");a.push({name:tName.value,role:tRole.value,photo});set("team",a);e.target.reset()}
+function addStyle(e){e.preventDefault();let a=get("styles");a.push({name:sName.value,icon:sIcon.value,desc:sDesc.value});set("styles",a);e.target.reset()}
+renderAll();
+</script>
+</body>
+</html>
